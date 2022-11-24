@@ -1,0 +1,23 @@
+[0.467s] Invoking command in '/home/hanada/ros2_ws/src/mypkg': PYTHONPATH=/home/hanada/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/hanada/ros2_ws/src/mypkg/build/mypkg/build install --prefix /home/hanada/ros2_ws/src/mypkg/install/mypkg --record /home/hanada/ros2_ws/src/mypkg/build/mypkg/install.log --single-version-externally-managed
+[0.610s] running egg_info
+[0.610s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[0.619s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.619s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[0.620s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[0.620s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[0.646s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.647s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.647s] running build
+[0.647s] running build_py
+[0.648s] running install
+[0.650s] running install_lib
+[0.652s] running install_data
+[0.653s] copying package.xml -> /home/hanada/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[0.653s] running install_egg_info
+[0.654s] removing '/home/hanada/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)
+[0.654s] Copying build/mypkg/mypkg.egg-info to /home/hanada/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[0.655s] running install_scripts
+[0.669s] Installing listener script to /home/hanada/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.669s] Installing talker script to /home/hanada/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.669s] writing list of installed files to '/home/hanada/ros2_ws/src/mypkg/build/mypkg/install.log'
+[0.693s] Invoked command in '/home/hanada/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/hanada/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/hanada/ros2_ws/src/mypkg/build/mypkg/build install --prefix /home/hanada/ros2_ws/src/mypkg/install/mypkg --record /home/hanada/ros2_ws/src/mypkg/build/mypkg/install.log --single-version-externally-managed
