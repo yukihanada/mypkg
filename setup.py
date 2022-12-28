@@ -17,7 +17,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Yuki Hanada',
-    maintainer_email='hanada@hoge.com',
+    maintainer_email='s21c1096cy@s.chibakoudai.jp',
     description='a package for practice',
     license='BSD-3-Clause',
     tests_require=['pytest'],
