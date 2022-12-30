@@ -1,28 +1,30 @@
 # mypkg
+![test](https://github.com/yukihanada/mypkg/actions/workflows/test.yml/badge.svg)
+
 * ロボットシステム学で使用しているリポジトリです.
 * このリポジトリはROS2のパッケージです.
 * このパッケージには、talker.py と listener.py というノードが含まれます.
 
 ## ノード
 * talker.py
-  * countupというトピックを通じてメッセージを送信する.
-  * メッセージは,16ビットの符号付き整数
+  * countupというトピックを通じてメッセージを送信します.
+  * メッセージの型は、16ビットの符号付き整数
 
 * listener.py
-  * トピックからのメッセージを受信し、talker.pyが送ってきた順番で標準出力する.
+  * トピックからのメッセージを受信して talker.py が送ってきた順番で標準出力します.
 
-##実行方法
-* 端末を二つ開き以下のコマンドを実行する.
-  * 端末1
+## 実行方法
+* ターミナルを二つ開き、それぞれに以下のコマンドを入力します.
+  * ターミナル1
 ```
 $ ros2 run mypkg talker
 ```
-  * 端末2
+  * ターミナル2
 ```
 $ ros2 run mypkg listener
 ```
 
-* 実行すると、端末1には何も表示されず、端末2には以下のように表示される.
+* 実行すると、ターミナル1には何も表示されず、ターミナル2には以下のように表示されます.
 ```
 [INFO] [1672385633.643034700] [listener]: Listen: 0
 [INFO] [1672385634.134124900] [listener]: Listen: 1
@@ -37,15 +39,17 @@ $ ros2 run mypkg listener
 [INFO] [1672385638.635167100] [listener]: Listen: 10
 ```
 
-## launch
-
+## launchファイル
+* このファイルにある talk_listen.launch.py を使用すると、複数のノードを一度に立ちあげることができ、一つの端末でも動作が可能です.
+ 
 ## 実行方法
-* 端末を一つ開き以下のコマンドを実行する.
+* 以下のコマンドを入力します
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 
-* 実行すると、以下のように表示される.
+* 実行すると、以下のように表示されます.
+* ctrl+c で終了.
 ```
 [listener-2] [INFO] [1672387006.936878700] [listener]: Listen: 0
 [listener-2] [INFO] [1672387007.429905700] [listener]: Listen: 1
@@ -61,8 +65,8 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 
 ## 必要なソフトウェア
-* ROS2
-* Ubuntu 20.04
+* ROS2 foxy    (動作確認済み)
+* Ubuntu 20.04 (動作確認済み)
 
 ## ライセンス
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます.
