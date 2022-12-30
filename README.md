@@ -1,4 +1,5 @@
 # mypkg
+![test](https://github.com/yukihanada/mypkg/actions/workflows/test.yml/badge.svg)
 
 * ロボットシステム学で使用しているリポジトリです.
 * このリポジトリはROS2のパッケージです.
@@ -12,7 +13,7 @@
 * listener.py
   * トピックからのメッセージを受信して talker.py が送ってきた順番で標準出力します.
 
-## 実行方法
+### 実行方法
 * ターミナルを二つ開き、それぞれに以下のコマンドを入力します.
   * ターミナル1
 
@@ -40,7 +41,7 @@
 ## launchファイル
 * このファイルにある talk_listen.launch.py を使用すると、複数のノードを一度に立ちあげることができ、一つの端末で動作が可能です.
  
-## 実行方法
+### 実行方法
 * 以下のコマンドを入力します.
 ```
 $ ros2 launch mypkg talk_listen.launch.py
