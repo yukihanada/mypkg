@@ -15,9 +15,12 @@
 ## 実行方法
 * ターミナルを二つ開き、それぞれに以下のコマンドを入力します.
   * ターミナル1
-  ``$ ros2 run mypkg talker``
+
+  `` $ ros2 run mypkg talker ``
+
   * ターミナル2
-  ``$ ros2 run mypkg listener``
+
+  `` $ ros2 run mypkg listener ``
 
 * 実行すると、ターミナル1には何も表示されず、ターミナル2には以下のように表示されます.
 ```
@@ -38,7 +41,7 @@
 * このファイルにある talk_listen.launch.py を使用すると、複数のノードを一度に立ちあげることができ、一つの端末で動作が可能です.
  
 ## 実行方法
-* 以下のコマンドを入力します
+* 以下のコマンドを入力します.
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
