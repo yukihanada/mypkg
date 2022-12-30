@@ -24,6 +24,8 @@
   `` $ ros2 run mypkg listener ``
 
 * 実行すると、ターミナル1には何も表示されず、ターミナル2には以下のように表示されます.
+* ctrl+c で終了.
+
 ```
 [INFO] [1672385633.643034700] [listener]: Listen: 0
 [INFO] [1672385634.134124900] [listener]: Listen: 1
